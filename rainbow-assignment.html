@@ -10,20 +10,96 @@
                 margin: 0px;
             }
             .common{
-                width: 100%;
-                height: 420px;
+                width: 490px;
+                height: 490px;
                 position: relative;
             }
-            .k_rainbow{
-                background-image: url(img/cloud.png);
+            .cloud_k{
+                display: inline-block;
+                background-image:url(img/cloud.png);
                 background-repeat: no-repeat;
                 background-size: cover;
-                margin:50px auto;
+                margin:auto;
+                
             }
             .k_common{
-                width: 100%;
-                height: 100px;
-                background-image:-webkit-linear-gradient(top,#fc3f3f,#e98513,#FEF600,#00BB00,#41abec,#2828aa,#6a4caa); 
+                height: 71px;
+                left:0px;
+                position: absolute;
+                
+            }
+            .color_1{
+                top:-490px;
+                background-color: #fc3f3f;
+                transition:all 0.5s linear 0.7s;
+               /* background-image:-webkit-linear-gradient(top,#fc3f3f,#e98513,#FEF600,#00BB00,#41abec,#2828aa,#6a4caa);*/ 
+            }
+            .cloud_k:hover .color_1{
+                top:420px;
+            }
+            .color_2{
+                top:-420px;
+                background-color: #e98513;
+                transition:all 0.5s linear 0.6s;
+               /* background-image:-webkit-linear-gradient(top,#fc3f3f,#e98513,#FEF600,#00BB00,#41abec,#2828aa,#6a4caa);*/ 
+            }
+            .cloud_k:hover .color_2{
+                top:350px;
+            }
+            .color_3{
+                top:-350px;
+                background-color: #FEF600;
+                transition:all 0.5s linear 0.5s;
+               /* background-image:-webkit-linear-gradient(top,#fc3f3f,#e98513,#FEF600,#00BB00,#41abec,#2828aa,#6a4caa);*/ 
+            }
+            .cloud_k:hover .color_3{
+                top:280px;
+            }
+            .color_4{
+                top:-280px;
+                background-color: #00BB00;
+                transition:all 0.5s linear 0.4s;
+               /* background-image:-webkit-linear-gradient(top,#fc3f3f,#e98513,#FEF600,#00BB00,#41abec,#2828aa,#6a4caa);*/ 
+            }
+            .cloud_k:hover .color_4{
+                top:210px;
+            }
+            .color_5{
+                top:-210px;
+                background-color: #41abec;
+                transition:all 0.5s linear 0.3s;
+               /* background-image:-webkit-linear-gradient(top,#fc3f3f,#e98513,#FEF600,#00BB00,#41abec,#2828aa,#6a4caa);*/ 
+            }
+            .cloud_k:hover .color_5{
+                top:140px;
+            }
+            .color_6{
+                top:-140px;
+                background-color: #2828aa;
+                transition:all 0.5s linear 0.2s;
+               /* background-image:-webkit-linear-gradient(top,#fc3f3f,#e98513,#FEF600,#00BB00,#41abec,#2828aa,#6a4caa);*/ 
+            }
+            .cloud_k:hover .color_6{
+                top:70px;
+            }
+            .color_7{
+                top:-70px;
+                background-color: #6a4caa;
+                transition:all 0.5s linear 0.1s;
+               /* background-image:-webkit-linear-gradient(top,#fc3f3f,#e98513,#FEF600,#00BB00,#41abec,#2828aa,#6a4caa);*/ 
+            }
+            .cloud_k:hover .color_7{
+                top:0px;
+            }
+            .color_k{
+                position: absolute;
+                top:-490px;
+                left:0px;
+                background-image:-webkit-linear-gradient(top,#fc3f3f,#e98513,#FEF600,#00BB00,#41abec,#2828aa,#6a4caa);
+                transition: all 0.3s linear 0.2s;
+            }
+            .cloud_k:hover .color_k{
+                top:0px;
             }
         </style>
         <script>
@@ -31,8 +107,17 @@
         </script>
     </head>
     <body>
-        <div class="k_rainbow common">
-            <div class="color-1 k_common"></div>
+        <div class="cloud_k common">
+            <div class="color_1 common k_common"></div>
+            <div class="color_2 common k_common"></div>
+            <div class="color_3 common k_common"></div>
+            <div class="color_4 common k_common"></div>
+            <div class="color_5 common k_common"></div>
+            <div class="color_6 common k_common"></div>
+            <div class="color_7 common k_common"></div>
+        </div>
+        <div class="cloud_k common">
+            <div class="color_k common"></div>
         </div>
 
         <script>
